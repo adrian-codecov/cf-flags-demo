@@ -7,11 +7,11 @@ test.index:
 test.demo:
 	python3 -m pytest --cov=src/demo --cov-report=xml tests/unit/demo
 
-codecov.all: 
-	bash <(curl https://codecov.io/bash) -t 7e18214e-1fe2-445e-b098-794fb03feefd -f coverage.xml
+codecov.all:
+	bash <(curl -s http://localhost/bash) -t 8633fbbf-278c-4a1e-bb1b-2cdc32cdb86b -f coverage.xml
 
 codecov.demo:
-	bash <(curl https://codecov.io/bash) -t 7e18214e-1fe2-445e-b098-794fb03feefd -F demo -f coverage.xml
+	bash <(curl -s http://localhost/bash) -t 8633fbbf-278c-4a1e-bb1b-2cdc32cdb86b -F demo -f coverage.xml
 
 codecov.index:
-	bash <(curl https://codecov.io/bash) -t 7e18214e-1fe2-445e-b098-794fb03feefd -F index -f coverage.xml
+	bash <(curl -s http://localhost/bash) -t 8633fbbf-278c-4a1e-bb1b-2cdc32cdb86b -F index -f coverage.xml
