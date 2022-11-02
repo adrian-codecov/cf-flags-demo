@@ -23,7 +23,7 @@ flags:
   demo:
     paths:
       - src/demo/demo.py
-    carryforward: false
+    carryforward: true
   index:
     paths:
       - src/index/index.py
